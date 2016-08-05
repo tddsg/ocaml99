@@ -1,6 +1,4 @@
 (* 
- Created by : Ta Quang Trung (taquangtrungvn(at)gmail.com)
-
  + The problem:
      Write a function "last : 'a list -> 'a option"
      that returns the last element of a list.
@@ -10,13 +8,13 @@
 
  + Compilation guide:
      ocamlbuild -use-ocamlfind -pkgs oUnit last.byte
-
 *)
 
 open OUnit
 
 (******************************)
 (***        solution        ***)
+
 let rec last = function
   | [] -> None
   | x::[] -> Some x
