@@ -26,6 +26,7 @@ let rec last = function
 (***        unit test       ***)
 
 let test_last () =
+  assert_equal (None)   (last []);
   assert_equal (Some 3)   (last [1; 2; 3]);
   assert_equal (Some "a") (last ["c"; "d"; "a"]);
   assert_equal (Some true) (last [false; true; true])
